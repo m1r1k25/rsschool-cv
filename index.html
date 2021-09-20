@@ -51,9 +51,9 @@
                <h5>Code example:</h5>
                <pre><code>
       module.exports = function toReadable(number) {
-         if (number < 20) {
+         if (number <&lt20) {
              return numbersUpToTwenty[number]
-         } else if (number < 100) {
+         } else if (number <&lt100) {
              let unity = '';
              +(String(number)[1]) ? unity = ' ' + numbersUpToTwenty[String(number)[1]] : unity = ''
              return `${numbersAfterTwenty[String((String(number)[0]) * 10)]}${unity}`
