@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="style.css">
+   <title>My CV</title>
+</head>
+
+<body>
+   <div class="container">
+      <header class="header">
+         <div class="title-block">
+            <h1>
+               Front-end developer Miroslav Zaitsev
+            </h1>
+         </div>
+         <div class="userpic">
+         </div>
+      </header>
+
+      <div class="hamburger">
+         <span></span>  
+         <span></span>
+         <span></span>
+      </div>
+      <div class="content-wrapper">
+         <div class="info-wrapper">
+            <section>
+               <h2>About me:</h2>
+                  <ul class="aboutme">
+                     <li class="aboutme-descr">I worked as a Senior Investigator, specializing in the investigation of information security crimes. Due to the fact that my work is no longer interesting to me, I want to change my occupation and chose programming as a new profession. I worked in the Investigative Committee for 5 years.</li>
+                     <li class="aboutme-descr">I like to constantly develop, learn something new, apply skills in practice, be in a circle of people like me, feel the usefulness of my work and be proud of the results.</li>
+                     <li class="aboutme-descr">Among my strengths, I would like to highlight high stress resistance, the ability to cope with a large volume of work, competently plan and find a common language with people.</li>
+                  </ul>
+            </section>
+            <section>
+               <h2>Objective: </h2>
+               <p class="aboutme-descr">
+                   I am taking part in the course, because I want to get up-to-date theoretical and practical skills in programming, sufficient to start working in IT. I chose the front-end as the direction of training, since this direction provides great opportunities for creativity and is especially relevant at the present time.</p>
+            </section>
+            <section>
+               <h2>Education:</h2>
+               <p class="aboutme-descr">In 2016 graduated from the Gomel State University named after I. F. Skaryna - Faculty of Law (specialty of jurisprudence) and Faculty of Economics (banking)</p>
+            </section>
+            <section>
+               <h2>English level:</h2>
+                  <ul class="aboutme">
+                     <li class="aboutme-descr">A2+</li>
+                  </ul>
+            </section>
+            <figure>
+               <h5>Code example:</h5>
+               <pre><code>
+      module.exports = function toReadable(number) {
+         if (number <&lt20) {
+             return numbersUpToTwenty[number]
+         } else if (number <&lt100) {
+             let unity = '';
+             +(String(number)[1]) ? unity = ' ' + numbersUpToTwenty[String(number)[1]] : unity = ''
+             return `${numbersAfterTwenty[String((String(number)[0]) * 10)]}${unity}`
+         } else {
+             let unity = +(String(number).slice(1))
+             if (unity > 0) {
+                 unity = ' ' + toReadable(unity)
+             } else {
+                 unity = ''
+             }
+             return `${numbersUpToTwenty[String(number)[0]]} hundred${unity}`
+         }
+     }
+     
+     const numbersUpToTwenty = {
+         '0': 'zero',
+         '1': 'one',
+         '2': 'two',
+         '3': 'three',
+         '4': 'four',
+         '5': 'five',
+         '6': 'six',
+         '7': 'seven',
+         '8': 'eight',
+         '9': 'nine',
+         '10': 'ten',
+         '11': 'eleven',
+         '12': 'twelve',
+         '13': 'thirteen',
+         '14': 'fourteen',
+         '15': 'fifteen',
+         '16': 'sixteen',
+         '17': 'seventeen',
+         '18': 'eighteen',
+         '19': 'nineteen'
+     }
+     
+     const numbersAfterTwenty = {
+         '20': 'twenty',
+         '30': 'thirty',
+         '40': 'forty',
+         '50': 'fifty',
+         '60': 'sixty',
+         '70': 'seventy',
+         '80': 'eighty',
+         '90': 'ninety'
+     }
+               </code></pre>
+            </figure>
+         </div>
+         
+         <aside>
+            <h3>
+               Contact me:
+            </h3>
+            <ul class="asidedescr">
+               <li class="contact__block">
+                  <div class="contact__image contact__image_tm">
+                  </div>
+                  <div>
+                     Telegram <a href="https://t.me/m1r1k25">t.me/m1r1k25</a>
+                  </div>
+               </li>
+               <li class="contact__block">
+                  <div class="contact__image contact__image_email">
+                  </div>
+                  <div>
+                     Email <a href="https://m1r1k25@mail.ru">m1r1k25@mail.ru</a>
+                  </div>
+               </li>
+               <li class="contact__block">
+                  <div class="contact__image contact__image_vk">
+                  </div>
+                  <div>
+                     VK <a href="https://vk.com/zaitsevm1r1k">vk.com/zaitsevm1r1k</a>
+                  </div>
+               </li>
+               <li class="contact__block">
+                  <div class="contact__image contact__image_gh">
+                  </div>
+                  <div>
+                     Github <a href="https://github.com/m1r1k25">github.com/m1r1k25</a>
+                  </div>
+               </li>
+               
+            </ul>
+            <h4>
+               My skills:
+            </h4>
+            <ul class="asidedescr-skills">
+               <li>HTML</li>
+               <li>CSS</li>
+               <li>Javascript</li>
+               <li>Git</li>
+               <li>React</li>
+               <li>Adaptive layout</li>
+               <li>CSS frameworks</li>
+            </ul>
+         </aside>
+      </div>
+      <footer>
+         <a class="footer__link" href="https://rs.school/js/"><img src="images/rs_school_js.svg" alt="logo"></a>
+         <span>, 2021</span>
+     </footer>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
